@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Memleket.ai provides touristic information about cities in Turkey. It uses artificial intelligence with open.ai api.  The user can get information about the city he chooses by entering the city name himself or with the help of pop-ups on the map, and can use the chatbot to get more detailed information.
 
 ## Available Scripts
 
