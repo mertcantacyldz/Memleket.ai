@@ -9,7 +9,7 @@ export default function Slight() {
       <div className=" flex justify-end  mt-10 pr-20">
     <div className=" max-w-6xl px-6">
       <div className="flex [&:hover>div]:w-16 [&>div:hover]:w-[30rem]">
-        <div className="group relative h-96 w-[30rem] cursor-pointer overflow-hidden transition-all duration-200">
+        <div className="group relative h-96 w-[30rem]  overflow-hidden transition-all duration-200">
           <img className="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src={`${process.env.PUBLIC_URL}/image/efes.jpg`} alt="" />
           <div className="invisible absolute inset-0 bg-gradient-to-t from-navbar group-hover:visible flex justify-start items-end pb-20 pl-10">
           <div className="   ">
@@ -20,7 +20,7 @@ export default function Slight() {
           
             </div>
         </div>
-        <div className="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <div className="group relative h-96 w-16  overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
           <img className="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src={`${process.env.PUBLIC_URL}/image/yemek.jpg`} alt="" />
           <div className="invisible absolute inset-0 bg-gradient-to-t from-navbar group-hover:visible flex justify-start items-end pb-20 pl-10">
             <div className="">
@@ -30,7 +30,7 @@ export default function Slight() {
           </div>
         </div>
   
-        <div className="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <div className="group relative h-96 w-16  overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
           <img className="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src={`${process.env.PUBLIC_URL}/image/pamukkale.jpg`} alt="" />
           <div className="invisible absolute inset-0 bg-gradient-to-t from-navbar group-hover:visible flex justify-start items-end pb-20 pl-10">
             <div className="mr-3 ">
@@ -40,7 +40,7 @@ export default function Slight() {
           </div>
         </div>
   
-        <div className="group relative h-96 w-16 cursor-pointer overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
+        <div className="group relative h-96 w-16  overflow-hidden shadow-lg shadow-black/30 transition-all duration-200">
           <img className="h-full object-cover transition-all group-hover:rotate-12 group-hover:scale-125" src={`${process.env.PUBLIC_URL}/image/bodrum.jpg`} alt="" />
           <div className="invisible absolute inset-0 bg-gradient-to-t from-navbar group-hover:visible flex justify-start items-end pb-20 pl-10">
             <div className="">
