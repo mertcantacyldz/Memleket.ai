@@ -20,7 +20,7 @@ function Destinations() {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-  console.log("api"+process.env.REACT_APP_API_KEY)
+ 
   async function callOpenAIAPI(cityData) {
     console.log("Calling the OpenAI API");
 
