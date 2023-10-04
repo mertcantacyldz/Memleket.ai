@@ -6,7 +6,7 @@ import Navbar from "../HomePage/Navbar";
 import Modal from "./ModalComponent/ModalComponent";
 
 function Destinations() {
-  const API_KEY = "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";
+  const API_KEY = "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";
   const [show, setShow] = useState(false);
   const [selectedCity, setSelectedCity] = useState({});
   const [inputValue, setInputValue] = useState("");
