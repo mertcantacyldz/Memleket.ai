@@ -9,7 +9,7 @@ const systemMessage = { //  Explain things like you're talking to a software pro
   "role": "system", "content": "Explain everything like a tour guide"
 }
 
-console.log("api"+process.env.REACT_APP_API_KEY)
+
 
 function ModalComponent({ isOpen, isOpenFunc }) {
   const [messages, setMessages] = useState([
