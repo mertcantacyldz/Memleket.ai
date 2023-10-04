@@ -7,7 +7,7 @@ import Modal from "./ModalComponent/ModalComponent";
 
 
 function Destinations() {
-  const API_KEY = REACT_APP_API_KEY;
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [show, setShow] = useState(false);
   const [selectedCity, setSelectedCity] = useState({});
   const [inputValue, setInputValue] = useState("");
