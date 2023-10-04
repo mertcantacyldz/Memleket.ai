@@ -5,8 +5,9 @@ import { cloneElement, useEffect, useState } from "react";
 import Navbar from "../HomePage/Navbar";
 import Modal from "./ModalComponent/ModalComponent";
 
+
 function Destinations() {
-  const API_KEY = "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";
+  const API_KEY = process.env.REACT_APP_API_KEY;
   const [show, setShow] = useState(false);
   const [selectedCity, setSelectedCity] = useState({});
   const [inputValue, setInputValue] = useState("");
@@ -19,9 +20,10 @@ function Destinations() {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
-
+  console.log("api"+process.env.REACT_APP_API_KEY)
   async function callOpenAIAPI(cityData) {
     console.log("Calling the OpenAI API");
+
 
     // For 0-10
     // What is the sentiment of this tweet with a value between 0 and 10 (10 being its very positive)?
