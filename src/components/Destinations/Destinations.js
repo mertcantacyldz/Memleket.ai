@@ -11,7 +11,7 @@ function Destinations() {
   const [show, setShow] = useState(false);
   const [selectedCity, setSelectedCity] = useState({});
   const [inputValue, setInputValue] = useState("");
-  const [sentiment, setSentiment] = useState("");
+  const [cityInfo, setCityInfo] = useState("");
   const unSelectedCityColor = "white";
   const selectedCityColor = "#ffbc00";
   const [isOpen, setIsOpen] = useState(false);
@@ -20,13 +20,12 @@ function Destinations() {
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
- 
+
   async function callOpenAIAPI(cityData) {
     console.log("Calling the OpenAI API");
 
 
-    // For 0-10
-    // What is the sentiment of this tweet with a value between 0 and 10 (10 being its very positive)?
+
 
     const APIBody = {
       model: "text-davinci-003",
@@ -51,7 +50,7 @@ function Destinations() {
       })
       .then((data) => {
         console.log(data);
-        setSentiment(data.choices[0].text.trim()); // Positive or negative
+        setCityInfo(data.choices[0].text.trim());
       });
   }
 
@@ -102,7 +101,7 @@ function Destinations() {
     <div className="bg-fethiye bg-cover min-h-screen relative  ">
       <Navbar className="absolute z-20" />
       {isOpen && <Modal isOpenFunc={isOpenFunc} isOpen={isOpen} />}
-      
+
       <div className=" flex  items-center justify-center flex-col mt-10 gap-12  ">
         <div className="relative z-20  bg-navyellow  flex items-center justify-center px-10 py-4 w-10 hover:w-80  rounded-full transition-all delay-150 durution-500 ease-in-out group">
           <input
@@ -126,12 +125,14 @@ function Destinations() {
             </h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">
               {" "}
-              {sentiment !== ""
-                ? sentiment
+              {cityInfo !== ""
+                ? cityInfo
                 : "Şehir Bilgileri Oluşturuluyor..."}
             </p>
-         <div className="w-full flex items-center justify-end mt-10">   <button onClick={isOpenFunc} class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow ">
-            Get more detailed information with Memleket.ai            </button></div>
+            <div className="w-full flex items-center justify-end mt-10">
+              <button onClick={isOpenFunc} class="bg-white hover:bg-gray-100 text-gray-800 font-bold py-2 px-4 border border-gray-400 rounded shadow ">
+                Get more detailed information with Memleket.ai            </button>
+            </div>
           </div>
         )}
 
