@@ -13,7 +13,7 @@ export default function Mid() {
           the help of artificial intelligence.
         </span>
         <a
-          className="bg-navyellow  font-inter text-2xl flex items-center  px-12 h-14 rounded-md mt-5  hover:bg-white hover:text-navyellow transition-all duration-75 "
+          className="bg-navyellow  font-inter text-2xl flex items-center  px-12 h-14 rounded-md mt-5  hover:bg-white hover:text-navyellow hover:transition-all hover:duration-500 transition-all duration-75 "
           href={"/destinations"}
         >
           Discover Now
