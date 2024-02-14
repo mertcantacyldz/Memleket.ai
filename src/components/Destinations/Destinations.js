@@ -28,7 +28,7 @@ function Destinations() {
 
 
     const APIBody = {
-      model: "text-davinci-002",
+      model: "gpt-3.5-turbo	",
       prompt: `I am currently in the city of ${cityData} and would like to receive information about historical sites, local food, natural attractions of the city and a general city guide`,
       temperature: 0,
       max_tokens: 500,
